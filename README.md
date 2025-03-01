@@ -1,8 +1,10 @@
-# Solana Trade Api ( version 1.0 )
+# Solana Trade API ( version 1.0 )
 
 The Solana Data API is a powerful and efficient service designed to fetch and analyze on-chain data, including token transfers, profit and loss (PnL) tracking, sniper bot detection, and more. This API enables developers to integrate real-time Solana insights into their applications, wallets, and analytics dashboards.
 
 [Click to check document](https://solana-exchange.vercel.app/)
+
+It'd be ❤️appreciate if ⭐stared on here
 
 # APIs ( version 1.0 )
 
