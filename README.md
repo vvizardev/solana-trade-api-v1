@@ -40,6 +40,14 @@ It'd be ❤️appreciate if ⭐stared on here
   "metadata": {}
 }
 ```
+- [`/api/v1/solana/airdrop/{mint_addr}`](https://solana-exchange.vercel.app/api/v1/solana/airdrop/3MQVpAwsccXHG7k6RvhwBVRCs3tfmHRW8VUYJUdyPBXd)
+
+```
+{
+  "airdropSig": "5fXqw4QvBCA22WEa5oWhj64QS6GayLep6pd7VA7MzLaKgWLGcbnPVK7VS34KeWddCibLrv1TfsxD6H542jCc8JRF",
+  "balance": 32896452699
+}
+```
 
 ## Token
 - [`/api/v1/solana/token/mint_info/{mint_address}`](https://solana-exchange.vercel.app/api/v1/solana/token/mint_info/6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN)
@@ -79,6 +87,105 @@ It'd be ❤️appreciate if ⭐stared on here
   "rugged": false
 }
 ```
+## Pumpfun
+- [`/api/v1/solana/pumpfun/mint_info/{mint_address}`](https://solana-exchange.vercel.app/api/v1/solana/pumpfun/mint_info/CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump)
+
+```
+{
+  "mint": "CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump",
+  "name": "PWEASE",
+  "symbol": "pwease",
+  "description": "YOU SHOULDA SAID PWEASE ",
+  "image_uri": "https://ipfs.io/ipfs/QmboNoCSu87DLgnqqf3LVWCUF2zZtzpSE5LtAa3tx8hUUG",
+  "video_uri": null,
+  "metadata_uri": "https://ipfs.io/ipfs/QmRnpREFBjET3wXFRTaQAqJ7YK7jiZssZDwJFQ6uHCkEUN",
+  "twitter": "https://x.com/TheMisterFrog/status/1895669466786402519",
+  "telegram": null,
+  "bonding_curve": "EPSQq5tEBonm7yFWo2bYBeCd1bvCsdV8Mq5zDCVvumYP",
+  "associated_bonding_curve": "7NFqGn9WPxMHTBh3GDb9dAFmbHVDmXJ7opgZkhMs31Q2",
+  "creator": "5ZJQSU7YHuDQqtUhL1z65UUuEnaJJ73J3YCBAo9uuTVD",
+  "created_timestamp": 1740949247900,
+  "raydium_pool": "9fmdkQipJK2teeUv53BMDXi52uRLbrEvV38K8GBNkiM7",
+  "complete": true,
+  "virtual_sol_reserves": 115005359770,
+  "virtual_token_reserves": 279900000000000,
+  "total_supply": 1000000000000000,
+  "website": null,
+  "show_name": true,
+  "king_of_the_hill_timestamp": 1740950695000,
+  "market_cap": 111000,
+  "reply_count": 1169,
+  "last_reply": 1741127522000,
+  "nsfw": false,
+  "market_id": "A3kVzzqzpa3Xm3W2cMbjyZRpdRhLcp7qUwDqSC5yRisN",
+  "inverted": true,
+  "is_currently_live": false,
+  "username": null,
+  "profile_image": null,
+  "usd_market_cap": 16075020
+}
+```
+- [`/api/v1/solana/pumpfun/mint_info/similar_token?mint_addr={mint_addr}&limit={number}`](https://solana-exchange.vercel.app/api/v1/solana/pumpfun/similar_token?mint_addr=CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump&limit=10)
+
+```
+[
+  {
+    "mint": "8u1dkyottYqG9xsK71ySWTnt4sKSy8CFKme2TsSWpump",
+    "name": "PWEASE",
+    "symbol": "pwease",
+    "description": "YOU SHOULDA SAID PWEASE",
+    "image_uri": "https://ipfs.io/ipfs/QmVEAMfYqH9z1MRTGCuRWGyvfb24UVpKQGpk4Qjq4e7Cf6",
+    "metadata_uri": "https://ipfs.io/ipfs/QmdECtM9vA13VJQJTmHQS5UPzQPiak4uaj28QjYGi6rgmT",
+    "twitter": null,
+    "telegram": null,
+    "bonding_curve": "4v3iFpat3XADpxUFyUoX5yM8NaQgD62GMe7nFUcRk1xi",
+    "associated_bonding_curve": "2b4wmkCkAL7mWqLbiboFzqd3t4UZpArDjDPDM7XuebpC",
+    "creator": "81KwZDYhTQhg1Ta2VpDvwQDVEzviqPZk4dron6FBhsS1",
+    "created_timestamp": 1741125458535,
+    "raydium_pool": null,
+    "complete": false,
+    "virtual_sol_reserves": 31350000004,
+    "virtual_token_reserves": 1026794258376857,
+    "total_supply": 1000000000000000,
+    "website": null,
+    "show_name": true,
+    "king_of_the_hill_timestamp": null,
+    "market_cap": 30.531919854,
+    "reply_count": 4,
+    "last_reply": 1741125882000,
+    "nsfw": false,
+    "market_id": null,
+    "usd_market_cap": 4434.7613587935
+  },
+  ...
+]
+```
+- [`/api/v1/solana/pumpfun/reply/{mint_addr}&limit={number}&offset={number}`](https://solana-exchange.vercel.app/api/v1/solana/pumpfun/reply/CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump?limit=10&offset=0)
+
+```
+{
+  "replies": [
+    {
+      "signature": null,
+      "is_buy": null,
+      "sol_amount": null,
+      "id": 106457508,
+      "mint": "CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump",
+      "file_uri": null,
+      "text": "Can we send this 😂😂😂",
+      "user": "831Tnuk8GDfHvjQPdTAG4mou5pc3v5usBCJ6LqNos9fH",
+      "timestamp": 1740949319885,
+      "total_likes": 8,
+      "username": null,
+      "profile_image": null,
+      "liked_by_user": false
+    },
+  ...
+  ],
+  "hasMore": true,
+  "offset": 10
+```
+
 ## Jito
 - [`/api/v1/solana/jito/bundle_id?tx_hash={tx_hash}`](https://solana-exchange.vercel.app/api/v1/solana/jito/bundle_id?tx_hash=5ho7ZLqTyNSUWTXqAEDs9uPDAUZ9WuvXSFH1oTU6HTbfDsLffJd6zPDXxE1KHPK7pKmAHqQVEPiGiFDxzpZ2a1Rf)
 
